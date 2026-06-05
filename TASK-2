@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavani landing page</title>
+    <style>
+        /* General Styles */
+        body {
+ margin: 0;
+ font-family: 'Segoe UI', sans-serif;
+ background-color: #121212;
+ color: #ffffff;
+ }
+        nav { 
+display: flex; 
+justify-content: space-between;
+ padding: 20px 5%; align-items: center;
+ }
+        .logo { 
+font-weight: bold;
+ font-size: 1.5rem;
+ }
+        nav ul { 
+list-style: none; 
+display: flex;
+ }
+        nav ul li {
+ margin-left: 20px; 
+}
+        nav a { 
+color: white; 
+text-decoration: none; 
+}
+        
+        /* Layout Sections */
+        section {
+ padding: 80px 5%; 
+}
+        .hero { 
+display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }
+        .hero-text {
+ max-width: 50%; 
+}
+        .btn {
+ padding: 10px 25px; 
+border: none;
+ cursor: pointer;
+ border-radius: 5px; 
+font-weight: bold;
+ }
+        .btn-primary { 
+background-color: #00bcd4; 
+color: white; 
+margin-right: 10px;
+ }
+        
+        /* Grid Layouts for Services and Projects */
+        .grid-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 20px;
+ margin-top: 30px;
+ }
+        .card { 
+background: #1e1e1e; 
+padding: 20px;
+ border-radius: 10px;
+ }
+        
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-text { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav>
+        <div class="logo">S.Bavani</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Info</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p>B.TECH 2ND YEAR STUDENT</p>
+            <h1>Hi, I'm S.Bavani</h1>
+            <h2>Passionate about Web Development</h2>
+            <p>I am S.Bavani, currently pursuing B.Tech 2nd year. I enjoy learning, modern and responsive websites using HTML and CSS.</p>
+            <button class="btn btn-primary">Explore More</button>
+            <button class="btn">Hire Me</button>
+        </div>
+        <div class="hero-image">
+            <img src="Bavani.JPEG" alt="Bavani" style="width: 300px; border-radius: 20px;">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>My Services</h2>
+        <div class="grid-container">
+            <div class="card"><h3>Creative Design</h3><p>Designing the layouts with modern UI and clean design.</p></div>
+            <div class="card"><h3>Responsive Websites</h3><p>Creating websites that work perfectly on mobile, tablet, and desktop screens.</p></div>
+            <div class="card"><h3>Frontend Learning</h3><p>Exploring frontend technologies and showcasing creative web development skills.</p></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>My Creative Works</h2>
+        <div class="grid-container">
+            <div class="card"><h3>Portfolio Website</h3><p>A responsive site with modern UI.</p></div>
+            <div class="card"><h3>Landing Page</h3><p>Creative landing page designed with HTML/CSS.</p></div>
+            <div class="card"><h3>Student Dashboard</h3><p>A simple dashboard for student management.</p></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="text-align: center;">
+        <h2>Let's Create Something Beautiful Together</h2>
+        <button class="btn btn-primary">Contact Me</button>
+    </section>
+
+</body>
+</html>
