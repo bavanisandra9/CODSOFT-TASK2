@@ -5,9 +5,13 @@ CODSOFT-Internship-task-2
 Personal Landing Page
 
 Name: BAVANI SANDRA
+
 College: NBKRIST
+
 Course: B.Tech 2nd year
+
 Domain: web development
+
 Internship: CODSOFT Internship
 
 Project Overview
